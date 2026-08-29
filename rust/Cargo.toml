@@ -1,0 +1,14 @@
+[workspace]
+members = [
+  "kvedit-core",
+  "kvedit-media",
+  "kvedit-export",
+  "kvedit-node",
+]
+resolver = "2"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
